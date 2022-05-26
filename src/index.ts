@@ -10,7 +10,7 @@ botonaso?.addEventListener("click", () => {
     case 2:
       location.href = "../ejerciciosProg16-5/arrayMeses.html";
       break;
-    case 2:
+    case 3:
       location.href = "../ejerciciosProg16-5/suma2Array.html";
       break;
   }
