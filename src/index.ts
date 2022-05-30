@@ -13,5 +13,8 @@ botonaso?.addEventListener("click", () => {
     case 3:
       location.href = "../ejerciciosProg16-5/suma2Array.html";
       break;
+    case 4:
+      location.href = "../ejerciciosProg16-5/personasEnDisco.html";
+      break;
   }
 });
