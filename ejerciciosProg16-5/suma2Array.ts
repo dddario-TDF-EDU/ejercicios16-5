@@ -1,8 +1,8 @@
 let botonaso = document.getElementById("comenzar");
 
 function verificacionNumero(numLocal: number): boolean {
-  let datoValido: boolean = isNaN(numLocal);
-  if (numLocal < 1 || datoValido === true) {
+  let datoValido: boolean;
+  if (numLocal < 1) {
     datoValido = false;
   } else {
     datoValido = true;
@@ -40,10 +40,9 @@ botonaso.addEventListener("click", () => {
 
     for (let elemento: number = 0; elemento < nElementos; elemento++) {
       arrayResultado[elemento] = array1[elemento] + array2[elemento];
-    }
-
-    for (let elemento: number = 0; elemento < nElementos; elemento++) {
       console.log(arrayResultado[elemento]);
     }
-  } else alert("cantidad de elementos invalido");
+  } else {
+    alert("cantidad de elementos invalido");
+  }
 });
