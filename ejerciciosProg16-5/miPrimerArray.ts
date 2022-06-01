@@ -41,3 +41,7 @@ function calculoProductoEscalar(array1: number[], array2: number[]) {
 
   console.log(productoEscalar);
 }
+
+//problema entre merge y codigo sin subir.
+//hice merge con las correciones de irina, mientras tenia en otra
+//pestaña codigo sin subir a github, que hacer en ese caso?
