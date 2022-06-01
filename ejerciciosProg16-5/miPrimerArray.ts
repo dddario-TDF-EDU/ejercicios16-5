@@ -15,3 +15,29 @@ botonaso.addEventListener("click", () => {
     console.log(miArray[recorrido]);
   }
 });
+
+function invertirArreglo(v: number[]) {
+  let tamañoArreglo: number = v.length - 1;
+  for (let indice: number = 0; indice <= tamañoArreglo / 2; indice++) {
+    let aux: number = v[indice];
+    v[indice] = v[tamañoArreglo - indice];
+    console.log("ahora pos:" + indice + "vale " + v[indice]);
+    v[tamañoArreglo - indice] = aux;
+  }
+}
+
+function calculoProductoEscalar(array1: number[], array2: number[]) {
+  let productoEscalar: number = 0;
+  let nElementos: number = array1.length;
+  let arrayResultado: number = new Array(nElementos - 1);
+
+  for (let elemento: number = 0; elemento < nElementos; elemento++) {
+    arrayResultado[elemento] = array1[elemento] * array2[elemento];
+  }
+
+  for (let elemento: number = 0; elemento < nElementos; elemento++) {
+    productoEscalar = productoEscalar + arrayResultado[elemento];
+  }
+
+  console.log(productoEscalar);
+}
