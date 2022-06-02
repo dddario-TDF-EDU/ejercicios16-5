@@ -1,11 +1,9 @@
 let botonaso = document.getElementById("comenzar");
 
 function verificacionNumero(numLocal: number): boolean {
-  let datoValido: boolean;
-  if (numLocal < 1) {
+  let datoValido: boolean = !isNaN(numLocal);
+  if (datoValido === true && numLocal < 1) {
     datoValido = false;
-  } else {
-    datoValido = true;
   }
   return datoValido;
 }
